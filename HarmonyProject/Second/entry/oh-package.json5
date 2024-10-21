@@ -1,0 +1,14 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  //依赖项
+  "dependencies": {
+    '@lznb/tools': 'file:../libs/lznb_tools',
+    'mytoolkits': 'file:../libs/lznb_tools'
+  }
+}
+

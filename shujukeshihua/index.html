@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="800"
+      height="600"
+      style="border: 1px solid #000000"
+    >
+    </canvas>
+    <script>
+      let img = document.createElement("img");
+      img.src =
+        "https://img1.baidu.com/it/u=2961564327,1242138160&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500";
+      var c = document.getElementById("myCanvas"); //获取dom元素
+      var ctx = c.getContext("2d"); //获取canvas的可以绘制区域
+      //   cts.fillStyle = "#FF0000"; //设置填充颜色
+      //   cts.fillRect(0, 0, 150, 75); //绘制
+      ctx.drawImage(img, 0, 0); //绘制图片,这个api主要用来做图片压缩合并等操作
+    </script>
+  </body>
+</html>

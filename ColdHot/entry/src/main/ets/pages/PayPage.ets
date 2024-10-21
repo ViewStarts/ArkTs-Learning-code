@@ -1,0 +1,21 @@
+@Entry
+@Component
+struct PayPage {
+  @State message: string = '支付页面';
+
+  build() {
+    Column() {
+      Text(this.message)
+        .id('PayPageHelloWorld')
+        .fontSize(50)
+        .fontWeight(FontWeight.Bold)
+        .alignRules({
+          center: { anchor: '__container__', align: VerticalAlign.Center },
+          middle: { anchor: '__container__', align: HorizontalAlign.Center }
+        })
+      Button('支付')
+    }
+    .height('100%')
+    .width('100%')
+  }
+}

@@ -1,0 +1,82 @@
+@Component
+export  struct username{
+  build() {
+    Column({
+      space:16
+    }){
+      Image('https://avatars.githubusercontent.com/u/95892717?v=4')
+        .width(200)
+        .borderRadius(100)
+      Text('YouR')
+      Row(){
+        Text('我的信息')
+        Blank()
+        Text('>')
+      }
+      .width('100%')
+      .border({
+        width: {
+          bottom:1
+        },
+        color:'#999'
+      })
+      .padding(12)
+      .margin(12)
+      Row(){
+        Text('我的信息')
+        Blank()
+        Text('>')
+      }
+      .width('100%')
+      .border({
+        width: {
+          bottom:1
+        },
+        color:'#999'
+      })
+      .padding(12)
+      Row(){
+        Text('我的信息')
+        Blank()
+        Text('>')
+      }
+      .width('100%')
+      .border({
+        width: {
+          bottom:1
+        },
+        color:'#999'
+      })
+      .padding(12)
+      Row(){
+        Text('我的信息')
+        Blank()
+        Text('>')
+      }
+      .width('100%')
+      .border({
+        width: {
+          bottom:1
+        },
+        color:'#999'
+      })
+      .padding(12)
+      Row(){
+        Text('我的信息')
+        Blank()
+        Text('>')
+      }
+      .width('100%')
+      .border({
+        width: {
+          bottom:1
+        },
+        color:'#999'
+      })
+      .padding(12)
+      Button('退出')
+        .width('65%')
+        .type(ButtonType.Normal)
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商品详情页</title>
+    <style>
+      img {
+        max-width: 100%;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
+    <script>
+      var vConsole = new window.VConsole();
+      const tagContent = document.querySelector("#content");
+      function loadProductData(id) {
+        fetch("http://192.168.14.46:1337/api/v1/products/" + id)
+          .then((res) => res.json())
+          .then((res) => {
+            tagContent.innerHTML = res.data.content;
+          });
+      }
+      //   loadProductData(56);
+    </script>
+  </body>
+</html>

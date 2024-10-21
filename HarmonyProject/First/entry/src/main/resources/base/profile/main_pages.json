@@ -1,0 +1,15 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/GoodsPage",
+    "pages/ClassPage",
+    "pages/HomePage",
+    "pages/AppliancePage",
+    "pages/RouterPage",
+    "view/ListPage",
+    "view/DetailPage",
+    "Http/HomesPage",
+    "Http/DetailsPage",
+    "Rcp/RcpPage"
+  ]
+}
